@@ -2,63 +2,71 @@ import React from "react";
 import Image from "next/image";
 import banner from "../../../public/matheus, focused programmer wearing a hoodie and headset, working on a laptop..png";
 import react from "../../../public/react.png";
-import tyescript from "../../../public/typescript.png";
+import typescript from "../../../public/typescript.png";
 import tailwind from "../../../public/tailwind.png";
 import nodejs from "../../../public/nodejs.png";
 
 const Hero = () => {
   return (
-    <div className=" pb-10 bg-black pt-20">
-      <div className=" flex flex-row w-full items-center  bg-black text-white justify-center px-4 py-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col ">
-          <h1 className="w-[300px] text-4xl fonts-bold pt-[85px] pb-5">
-            Web Developer Front-End
+    <section className="bg-black pt-16 pb-12 sm:pt-24 sm:pb-16">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 text-white sm:px-6 lg:flex-row lg:justify-between lg:px-8">
+        {/* متن سمت چپ */}
+        <div className="flex-1 text-center lg:text-left">
+          <h1 className="max-w-md text-3xl font-bold sm:text-4xl lg:text-5xl">
+            Web Developer{" "}
+            <span className="font-extrabold block lg:inline">Front-End</span>
           </h1>
-          <button className="bg-yellow-500  w-[150px] text-[#161413] ">
-            <a href="#">Contact me</a>
+
+          <p className="mt-4 max-w-md text-sm text-neutral-300 mx-auto lg:mx-0">
+            I design and build modern, responsive web interfaces focused on
+            usability, performance, and clean code.
+          </p>
+
+          <button className="mt-6 rounded-sm bg-yellow-500 px-6 py-2 text-sm font-semibold text-black hover:bg-yellow-400">
+            <a href="#contact">Contact me</a>
           </button>
-          <div className="pt-52 flex flex-col">
-            <span className="text-[10px]">My favariot Stack</span>
-            <div className="flex gap-5 pt-5">
+
+          {/* استک مورد علاقه */}
+          <div className="mt-10">
+            <span className="text-[11px] capitalize tracking-[0.2em] text-neutral-400">
+              My favorite stack
+            </span>
+            <div className="mt-4 flex items-center justify-center gap-4 lg:justify-start">
               <Image
-                className="flex h-5 w-5 items-center justify-center rounded-full   bg-neutral-900 text-sm text-neutral-200 transition  "
+                className="h-7 w-7 rounded-full bg-neutral-900"
                 src={react}
-                width={20}
-                height={20}
-                alt="Picture of the author"
+                alt="React"
               />
-
               <Image
-                className="flex h-5 w-5 items-center justify-center   bg-neutral-900 text-sm text-neutral-200 transition "
-                src={tyescript}
-                width={20}
-                height={20}
-                alt="Picture of the author"
+                className="h-7 w-7 rounded-full bg-neutral-900"
+                src={typescript}
+                alt="TypeScript"
               />
-
               <Image
-                className="flex h-5 w-5 items-center justify-center rounded-full  bg-neutral-900 text-sm text-neutral-200 transition "
+                className="h-7 w-7 rounded-full bg-neutral-900"
                 src={tailwind}
-                width={20}
-                height={20}
-                alt="Picture of the author"
+                alt="Tailwind CSS"
               />
-
               <Image
-                className="flex h-5 w-5 items-center justify-center rounded-full   bg-neutral-900 text-sm text-neutral-200 transition"
+                className="h-7 w-7 rounded-full bg-neutral-900"
                 src={nodejs}
-                width={20}
-                height={20}
-                alt="Picture of the author"
+                alt="Node.js"
               />
             </div>
           </div>
         </div>
-        <div>
-          <Image src={banner} height={500} width={400} alt="banner" />
+
+        {/* تصویر سمت راست */}
+        <div className="flex flex-1 justify-center lg:justify-end">
+          <Image
+            src={banner}
+            alt="Developer at work"
+            className="h-auto w-64 sm:w-80 lg:w-[380px]"
+            priority
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
