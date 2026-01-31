@@ -24,11 +24,11 @@ function TypewriterText({
       if (index <= text.length) {
         setDisplayed(text.slice(0, index));
         index += 1;
-        timeoutId = window.setTimeout(type, speed);
+        timeoutId = setTimeout(type, speed);
       } else {
         // متن کامل شد → یک مکث، بعد از اول شروع کن
         index = 0;
-        timeoutId = window.setTimeout(type, pause);
+        timeoutId = setTimeout(type, pause);
       }
     };
 
