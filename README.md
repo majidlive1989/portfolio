@@ -175,7 +175,7 @@ While this is a personal portfolio, suggestions and feedback are welcome!
 **Majid Rahmani** - Full Stack Developer
 
 - 📧 Email: [majid@livedevelop.ir](mailto:majid@livedevelop.ir)
-- 💼 LinkedIn: [linkedin.com/in/majid-rahmani](https://linkedin.com/in/majid-rahmani)
+- 💼 LinkedIn: [linkedin.com/in/majidlive](https://linkedin.com/in/majidlive)
 - 🐙 GitHub: [@majidlive1989](https://github.com/majidlive1989)
 - 🌐 Website: [livedevelop.ir](https://livedevelop.ir)
 - 📱 Telegram: [@majidlive](https://t.me/majidlive)
