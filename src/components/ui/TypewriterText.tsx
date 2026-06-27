@@ -17,7 +17,7 @@ function TypewriterText({
 
   useEffect(() => {
     let index = 0;
-    let timeoutId: number | null;
+    let timeoutId: any;
 
     const type = () => {
       // هنوز در حال اضافه کردن کاراکترها
